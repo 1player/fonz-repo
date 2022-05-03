@@ -1,0 +1,20 @@
+- name: IBM Plex
+  source:
+    type: github-release
+    repo: IBM/plex
+    asset: OpenType.zip
+  format: otf
+
+- name: Iosevka
+  source:
+    type: github-release
+    repo: be5invis/Iosevka
+    asset: super-ttc-iosevka-$VERSION.zip
+  format: ttc
+
+- name: Ubuntu
+  source:
+    type: github-release
+    repo: daltonmaag/ubuntu
+    asset: ubuntu-font-family-$VERSION.zip
+  format: ttf
