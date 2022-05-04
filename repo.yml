@@ -12,6 +12,22 @@
     asset: OpenType.zip
   format: otf
 
+- name: Inter
+  source:
+    type: github-release
+    repo: rsms/inter
+    asset: Inter-$VERSION.zip
+  format: otf
+  script: |
+    rm -r "Inter Web" "Inter Variable" "Inter Hinted for Windows"
+
+- name: Inconsolata
+  source:
+    type: github-release
+    repo: googlefonts/Inconsolata
+    asset: fonts_otf.zip
+  format: otf
+
 - name: Iosevka
   source:
     type: github-release
