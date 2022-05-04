@@ -5,6 +5,13 @@
     asset: FantasqueSansMono-Normal.zip
   format: otf
 
+- name: Mononoki
+  source:
+    type: github-release
+    repo: madmalik/mononoki
+    asset: mononoki.zip
+  format: ttf
+
 - name: IBM Plex
   source:
     type: github-release
