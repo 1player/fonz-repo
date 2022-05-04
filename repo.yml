@@ -12,6 +12,15 @@
     asset: super-ttc-iosevka-$VERSION.zip
   format: ttc
 
+- name: Victor Mono
+  source:
+    type: github-release
+    repo: rubjo/victor-mono
+  format: otf
+  script: |
+    cd rubjo-victor-mono-*/public
+    unzip Victor\ Mono.zip
+
 - name: Ubuntu
   source:
     type: github-release
