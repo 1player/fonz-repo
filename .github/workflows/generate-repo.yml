@@ -43,10 +43,8 @@ jobs:
       # Generate repo file
       - name: generate-repo.sh
         run: |
-          ls -lR $GITHUB_WORKSPACE
           chmod +x $GITHUB_WORKSPACE/fonz
-          export PATH="$GITHUB_WORKSPACE:$PATH"
-          scripts/generate-repo.sh
+          bash -x scripts/generate-repo.sh
           
       # Commit updated repo file
       - uses: EndBug/add-and-commit@v9
