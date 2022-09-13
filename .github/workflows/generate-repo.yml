@@ -38,13 +38,12 @@ jobs:
         with:
           repo: '1player/fonz'
           file: "fonz.linux.x86_64"
-          target: ".bin/fonz"
+          target: "fonz"
       
       # Generate repo file
       - name: generate-repo.sh
         run: |
-          ls -lR $GITHUB_WORKSPACE/.bin
-          export PATH="$GITHUB_WORKSPACE/.bin:$PATH"
+          export PATH="$GITHUB_WORKSPACE:$PATH"
           scripts/generate-repo.sh
           
       # Commit updated repo file
