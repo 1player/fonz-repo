@@ -45,6 +45,7 @@ jobs:
       - name: generate-repo.sh
         run: |
           cp $GITHUB_WORKSPACE/.bin/fonz.linux.x86_64 $GITHUB_WORKSPACE/.bin/fonz
+          ls -lR $GITHUB_WORKSPACE/.bin
           export PATH="$GITHUB_WORKSPACE/.bin:$PATH"
           scripts/generate-repo.sh
           
