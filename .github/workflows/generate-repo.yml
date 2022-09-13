@@ -43,6 +43,7 @@ jobs:
       # Generate repo file
       - name: generate-repo.sh
         run: |
+          chmod +x $GITHUB_WORKSPACE/fonz
           export PATH="$GITHUB_WORKSPACE:$PATH"
           scripts/generate-repo.sh
           
