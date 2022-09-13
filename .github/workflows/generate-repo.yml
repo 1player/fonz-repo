@@ -39,12 +39,12 @@ jobs:
           repository: "1player/fonz"
           latest: true
           fileName: "fonz.linux.x86_64"
-          out-file-path: ".bin/fonz"
+          out-file-path: ".bin"
       
       # Generate repo file
-      - name: Run a one-line script
+      - name: generate-repo.sh
         run: |
-          ls -l $GITHUB_WORKSPACE/.bin
+          cp $GITHUB_WORKSPACE/.bin/fonz.linux.x86_64 $GITHUB_WORKSPACE/.bin/fonz
           export PATH="$GITHUB_WORKSPACE/.bin:$PATH"
           scripts/generate-repo.sh
           
