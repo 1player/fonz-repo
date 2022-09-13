@@ -1,6 +1,6 @@
-- name: IBM Plex
-  source:
-    type: github-release
-    repo: IBM/plex
-    asset: OpenType.zip
-  format: otf
+name: IBM Plex
+source:
+  type: github-release
+  repo: IBM/plex
+  asset: OpenType.zip
+format: otf

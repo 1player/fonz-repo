@@ -1,6 +1,6 @@
-- name: Mononoki
-  source:
-    type: github-release
-    repo: madmalik/mononoki
-    asset: mononoki.zip
-  format: ttf
+name: Mononoki
+source:
+  type: github-release
+  repo: madmalik/mononoki
+  asset: mononoki.zip
+format: ttf

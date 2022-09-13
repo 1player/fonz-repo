@@ -1,6 +1,6 @@
-- name: Fantasque Sans Mono
-  source:
-    type: github-release
-    repo: belluzj/fantasque-sans
-    asset: FantasqueSansMono-Normal.zip
-  format: otf
+name: Fantasque Sans Mono
+source:
+  type: github-release
+  repo: belluzj/fantasque-sans
+  asset: FantasqueSansMono-Normal.zip
+format: otf

@@ -1,6 +1,6 @@
-- name: Inconsolata
-  source:
-    type: github-release
-    repo: googlefonts/Inconsolata
-    asset: fonts_otf.zip
-  format: otf
+name: Inconsolata
+source:
+  type: github-release
+  repo: googlefonts/Inconsolata
+  asset: fonts_otf.zip
+format: otf
