@@ -34,18 +34,15 @@ jobs:
         if: ${{ github.event_name != 'pull_request' }}
       
       # Download latest fonz release
-      - uses: robinraju/release-downloader@v1.5
+      - uses: dsaltares/fetch-gh-release-asset@master
         with:
-          repository: "1player/fonz"
-          latest: true
-          fileName: "fonz.linux.x86_64"
-          out-file-path: ".bin"
+          repository: '1player/fonz'
+          file: "fonz.linux.x86_64"
+          target: ".bin/fonz"
       
       # Generate repo file
       - name: generate-repo.sh
         run: |
-          ls -lR $GITHUB_WORKSPACE/.bin
-          cp $GITHUB_WORKSPACE/.bin/fonz.linux.x86_64 $GITHUB_WORKSPACE/.bin/fonz
           ls -lR $GITHUB_WORKSPACE/.bin
           export PATH="$GITHUB_WORKSPACE/.bin:$PATH"
           scripts/generate-repo.sh
