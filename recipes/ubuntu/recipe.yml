@@ -1,0 +1,6 @@
+- name: Ubuntu
+  source:
+    type: github-release
+    repo: daltonmaag/ubuntu
+    asset: ubuntu-font-family-$VERSION.zip
+  format: ttf
