@@ -44,6 +44,7 @@ jobs:
       # Generate repo file
       - name: Run a one-line script
         run: |
+          ls -l $GITHUB_WORKSPACE/.bin
           export PATH="$GITHUB_WORKSPACE/.bin:$PATH"
           scripts/generate-repo.sh
           
